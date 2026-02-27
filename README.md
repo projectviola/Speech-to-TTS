@@ -14,7 +14,7 @@ Real-time speech-to-text-to-speech system with VAD-based segmentation and OBS in
 ## Requirements
 
 - Windows 10/11
-- NVIDIA GPU (RTX 4080 Super tested)
+- NVIDIA GPU
 - CUDA 13.1 installed
 - cuDNN 9.1.0 installed
 - ~4GB disk space for models
