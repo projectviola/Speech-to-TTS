@@ -1,0 +1,41 @@
+{
+  "audio": {
+    "input_device_index": 2,
+    "output_device_index": 15,
+    "input_sample_rate": 16000,
+    "channels": 1
+  },
+  "vad": {
+    "model": "silero",
+    "start_threshold": 0.5,
+    "end_threshold": 0.35,
+    "min_speech_ms": 250,
+    "min_silence_ms": 300,
+    "prebuffer_seconds": 2.0,
+    "tail_seconds": 0.15,
+    "frame_ms": 32
+  },
+  "stt": {
+    "model_size": "small",
+    "device": "cuda",
+    "compute_type": "float16"
+  },
+  "tts": {
+    "engine": "kokoro_onnx",
+    "voice": "af_heart",
+    "speed": 1.0,
+    "pitch_semitones": 10.0,
+    "require_cuda": true
+  },
+  "behavior": {
+    "vad_end_timeout_seconds": 1.0,
+    "queue_max_items": 10,
+    "pause_hotkey": "ctrl+shift+p"
+  },
+  "obs": {
+    "enabled": true,
+    "transcript_file": "obs_transcript.txt",
+    "next_transcript_delay_seconds": 0.5,
+    "clear_delay_seconds": 2.0
+  }
+}
